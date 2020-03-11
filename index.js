@@ -1,6 +1,6 @@
-import * as Blockly from 'blockly/core';
+import Blockly from 'blockly/core';
 import 'blockly/blocks';
-import 'blockly/python'
+import 'blockly/python';
 import * as En from 'blockly/msg/en';
 
 Blockly.setLocale(En);
