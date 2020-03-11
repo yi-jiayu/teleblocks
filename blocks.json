@@ -1,0 +1,45 @@
+[{
+  "type": "message_from",
+  "message0": "message from %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "username",
+      "check": "String"
+    }
+  ],
+  "output": "Boolean",
+  "colour": 230,
+  "tooltip": "True when a message is from a certain user",
+  "helpUrl": ""
+},
+{
+  "type": "reply_with",
+  "message0": "reply with %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "reply"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "colour": 230,
+  "tooltip": "Reply to an incoming message",
+  "helpUrl": ""
+},
+{
+  "type": "text_message",
+  "message0": "text %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "NAME",
+      "check": "String"
+    }
+  ],
+  "output": null,
+  "colour": 230,
+  "tooltip": "A text message",
+  "helpUrl": ""
+}]
