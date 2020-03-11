@@ -8,7 +8,7 @@ html {
 
 #blocklyDiv {
   height: 480px;
-  width: 600px;
+  width: 800px;
 }
 
 #output {
@@ -17,5 +17,5 @@ html {
   font-family: monospace;
   min-height: 200px;
   padding: 1em;
-  width: 600px;
+  width: 800px;
 }
