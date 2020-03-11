@@ -32,7 +32,7 @@
 },
 {
   "type": "message_from_user",
-  "message0": "message from user %1",
+  "message0": "from user %1",
   "args0": [
     {
       "type": "input_value",
@@ -63,7 +63,7 @@
 },
 {
   "type": "text_contains",
-  "message0": "message text contains %1",
+  "message0": "text contains %1",
   "args0": [
     {
       "type": "input_value",
@@ -73,6 +73,19 @@
   ],
   "output": null,
   "colour": 270,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "on_message",
+  "message0": "on message %1",
+  "args0": [
+    {
+      "type": "input_statement",
+      "name": "actions"
+    }
+  ],
+  "colour": 180,
   "tooltip": "",
   "helpUrl": ""
 }]
