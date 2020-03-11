@@ -1,4 +1,5 @@
-import Blockly from 'blockly';
+import * as Blockly from 'blockly/core';
+import 'blockly/blocks';
 import 'blockly/python'
 import * as En from 'blockly/msg/en';
 
@@ -8,10 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const workspace = Blockly.inject('blocklyDiv',
       {toolbox: document.getElementById('toolbox')});
 
-  function myUpdateFunction(event) {
-    const code = Blockly.Python.workspaceToCode(workspace);
-    document.getElementById('output').textContent = code;
-  }
+  const generateCode = function () {
+    document.getElementById('output').textContent = Blockly['Python'].workspaceToCode(workspace);
+  };
 
-  workspace.addChangeListener(myUpdateFunction);
+  workspace.addChangeListener(generateCode);
 });
