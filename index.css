@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#blocklyDiv {
+  height: 480px;
+  width: 600px;
+}
+
+#output {
+  color: white;
+  background-color: black;
+  font-family: monospace;
+  min-height: 200px;
+  padding: 1em;
+  width: 600px;
+}
