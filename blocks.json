@@ -1,6 +1,38 @@
 [{
-  "type": "message_from",
-  "message0": "message from %1",
+  "type": "reply_with_image",
+  "message0": "reply with image %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "url",
+      "check": "String"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "URL of an image to send",
+  "helpUrl": ""
+},
+{
+  "type": "reply_with_text",
+  "message0": "reply with text %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "text",
+      "check": "String"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "Text to send",
+  "helpUrl": ""
+},
+{
+  "type": "message_from_user",
+  "message0": "message from user %1",
   "args0": [
     {
       "type": "input_value",
@@ -9,37 +41,38 @@
     }
   ],
   "output": "Boolean",
-  "colour": 230,
+  "colour": 270,
   "tooltip": "True when a message is from a certain user",
   "helpUrl": ""
 },
 {
-  "type": "reply_with",
-  "message0": "reply with %1",
+  "type": "forward_to_channel",
+  "message0": "forward to channel %1",
   "args0": [
     {
       "type": "input_value",
-      "name": "reply"
+      "name": "name",
+      "check": "String"
     }
   ],
-  "inputsInline": true,
   "previousStatement": null,
-  "colour": 230,
-  "tooltip": "Reply to an incoming message",
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "",
   "helpUrl": ""
 },
 {
-  "type": "text_message",
-  "message0": "text %1",
+  "type": "text_contains",
+  "message0": "message text contains %1",
   "args0": [
     {
       "type": "input_value",
-      "name": "NAME",
+      "name": "query",
       "check": "String"
     }
   ],
   "output": null,
-  "colour": 230,
-  "tooltip": "A text message",
+  "colour": 270,
+  "tooltip": "",
   "helpUrl": ""
 }]
