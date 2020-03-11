@@ -10,12 +10,3 @@ html {
   height: 480px;
   width: 800px;
 }
-
-#output {
-  color: white;
-  background-color: black;
-  font-family: monospace;
-  min-height: 200px;
-  padding: 1em;
-  width: 800px;
-}
