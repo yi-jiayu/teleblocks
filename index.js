@@ -5,10 +5,12 @@ import * as En from 'blockly/msg/en';
 import blocks from './blocks.json';
 
 Blockly.setLocale(En);
-
 Blockly.defineBlocksWithJsonArray(blocks);
 
+// use `Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(window.workspace))`
+// to dump workspace to XML.
+window.Blockly = Blockly;
 document.addEventListener('DOMContentLoaded', function () {
-  const workspace = Blockly.inject('blocklyDiv',
+  window.workspace = Blockly.inject('blocklyDiv',
       {toolbox: document.getElementById('toolbox')});
 });
