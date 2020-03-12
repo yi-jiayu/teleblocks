@@ -88,4 +88,38 @@
   "colour": 180,
   "tooltip": "",
   "helpUrl": ""
+},
+{
+  "type": "quizarium_round_begin",
+  "message0": "Quizarium round beginning",
+  "output": "Boolean",
+  "colour": 270,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "mute_chat",
+  "message0": "mute chat",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "unmute_chat",
+  "message0": "unmute chat",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 90,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "quizarium_round_end",
+  "message0": "Quizarium round ends",
+  "output": "Boolean",
+  "colour": 270,
+  "tooltip": "",
+  "helpUrl": ""
 }]
